@@ -20,6 +20,6 @@ Admin Panel Voyager
 
 #menggunkan seeder 
 - tambahkan ke .env FAKER_LOCALE=id_ID
-- run seeder dengan php artisan migrate:fresh --seed
+- run seeder dengan php artisan db:seed --class=DatabaseSeeder
 - run php artisan db:seed --class=IndikatorSeeder
 - php artisan db:seed --class=PenilaianSeeder
