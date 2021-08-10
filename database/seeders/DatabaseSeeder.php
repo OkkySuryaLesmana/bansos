@@ -17,12 +17,9 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $faker = Faker::create('id_ID');
-        Penduduk::factory(5)->create();
-
-//        if(DB::table('users')->count() == 0){
+        Penduduk::factory(100)->create();
 
         $penduduk = DB::table('penduduks')->get();
-//        $indikator = DB::table('indikators')->get();
 
         foreach ($penduduk as $pen) {
             $total = 0;
@@ -41,7 +38,7 @@ class DatabaseSeeder extends Seeder
                 $status = 'Hampir Miskin';
             } elseif ($total >= 51 && $total <= 60) {
                 $status = 'Rentan Miskin';
-            } elseif ($total >= 51 && $total <= 60) {
+            } elseif ($total >= 61) {
                 $status = 'Tidak Miskin';
             }
 //            print $data;
