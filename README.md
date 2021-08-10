@@ -2,6 +2,7 @@
  Aplikasi Data Bantuan Sosial Pemerintah Kabupaten Ciamis.
  
 Laravel Versi 8.0
+
 Admin Panel Voyager
 
 * Setelah download repository, segera lakukan update composer.
@@ -27,9 +28,12 @@ Setting Voyager
 
 #menggunkan seeder 
 - tambahkan ke .env FAKER_LOCALE=id_ID
+
 `Data Kependudukan`
 - run seeder dengan php artisan db:seed --class=DatabaseSeeder
+
 `Indikator Kemiskinan`
 - run php artisan db:seed --class=IndikatorSeeder
+
 `Penilaian`
 - php artisan db:seed --class=PenilaianSeeder
