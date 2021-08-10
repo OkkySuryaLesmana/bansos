@@ -17,3 +17,9 @@ Admin Panel Voyager
 
 * Tambahkan symlink, agar data di storage dapat di akses public.
 `php artisan storage:link`
+
+#menggunkan seeder 
+- tambahkan ke .env FAKER_LOCALE=id_ID
+- run seeder dengan php artisan db:seed --class=DatabaseSeeder
+- run php artisan db:seed --class=IndikatorSeeder
+- php artisan db:seed --class=PenilaianSeeder
