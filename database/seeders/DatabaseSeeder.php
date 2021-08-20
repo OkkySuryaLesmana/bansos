@@ -43,7 +43,7 @@ class DatabaseSeeder extends Seeder
             }
 //            print $data;
 
-            DB::table('angka_kemiskinans')->insert([
+            DB::table('skoring')->insert([
 
                 'nik' => $pen->nik,
                 'indikator1' => $data[0],
