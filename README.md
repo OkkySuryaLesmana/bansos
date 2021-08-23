@@ -19,16 +19,20 @@ Admin Panel Voyager
 `php artisan storage:link`
 
 # Menggunkan Seeder 
-tambahkan ke .env FAKER_LOCALE=id_ID
+Tambahkan ke `.env` => FAKER_LOCALE=id_ID Pada Baris Terakhir
 
 Data Kependudukan
+
 `php artisan db:seed --class=DatabaseSeeder`
 
 Data Indikator
+
 `php artisan db:seed --class=IndikatorSeeder`
 
 Data Penilaian
+
 `php artisan db:seed --class=PenilaianSeeder`
 
 Data User
+
 `php artisan db:seed --class=UsersTableSeeder`
