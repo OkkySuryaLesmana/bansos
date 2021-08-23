@@ -16,8 +16,37 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
-
-
-Route::group(['prefix' => 'admin'], function () {
-    Voyager::routes();
+Route::get('pencarian', function () {
+    return view('pencarian');
 });
+Route::get('bansoskecamatan', function () {
+    return view('bansoskecamatan');
+});
+Route::get('bansoskelurahan', function () {
+    return view('bansoskelurahan');
+});
+Route::get('alurbansos', function () {
+    return view('alurbansos');
+});
+Route::get('alasanditolak', function () {
+    return view('alasanditolak');
+});
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Auth::routes();
+
+Route::get('/pikocis', [App\Http\Controllers\HomeController::class, 'pikocis'])->name('pikocis');

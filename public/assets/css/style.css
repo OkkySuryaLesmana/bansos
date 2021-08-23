@@ -380,7 +380,7 @@ section {
 }
 
 .section-bg {
-  background-color: #f4fbfe;
+  background-color: #F5F5F5;
 }
 
 .section-title {
@@ -1493,9 +1493,71 @@ section {
   }
 }
 /*--------------------------------------------------------------
-# ramdan css
+# coba css
 --------------------------------------------------------------*/
-#ramdan .hero-img img {
+#coba .hero-img img {
   width: 80%;
 }
+
+img.center {
+  display: block;
+  margin: 0 auto;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.bansos {
+  padding: 0;
+  background: #154cc2;
+}
+
+.card {
+  border-radius: 25px;
+}
+
+html, body {
+  height: 100%;
+}
+
+.latar-bg {
+  background-color: #DCDCDC;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+
+.modal {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) { 
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
 }
