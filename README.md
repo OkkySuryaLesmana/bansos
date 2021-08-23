@@ -2,7 +2,8 @@
  Aplikasi Data Bantuan Sosial Pemerintah Kabupaten Ciamis.
  
 Laravel Versi 8.0
-Admin Panel Voyager
+
+Admin Panel Menggunakan Voyager
 
 * Setelah download repository, segera lakukan update composer.
 `composer update`
