@@ -37,3 +37,9 @@ Data Penilaian
 Data User
 
 `php artisan db:seed --class=UsersTableSeeder`
+
+# Set Up Kondisional
+
+Tambahkan key aplikasi
+
+`php artisan key:generate`
