@@ -18,7 +18,7 @@ Admin Panel Voyager
 * Tambahkan symlink, agar data di storage dapat di akses public.
 `php artisan storage:link`
 
-# menggunkan seeder 
+# Menggunkan Seeder 
 tambahkan ke .env FAKER_LOCALE=id_ID
 
 Data Kependudukan
