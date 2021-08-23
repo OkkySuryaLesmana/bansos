@@ -2,10 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\Penduduk;
-use Faker\Factory as Faker;
 use Illuminate\Database\Seeder;
-use DB;
 
 class DatabaseSeeder extends Seeder
 {
@@ -72,5 +69,6 @@ class DatabaseSeeder extends Seeder
             ]);
         }
 
+        // \App\Models\User::factory(10)->create();
     }
 }
