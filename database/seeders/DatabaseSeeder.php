@@ -2,10 +2,10 @@
 
 namespace Database\Seeders;
 
-use App\Models\Penduduk;
-use Faker\Factory as Faker;
 use Illuminate\Database\Seeder;
-use DB;
+use Faker\Factory as Faker;
+use Illuminate\Support\Facades\DB;
+use App\Models\Penduduk;
 
 class DatabaseSeeder extends Seeder
 {

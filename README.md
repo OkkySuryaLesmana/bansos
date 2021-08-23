@@ -23,3 +23,4 @@ Admin Panel Voyager
 - run seeder dengan php artisan db:seed --class=DatabaseSeeder
 - run php artisan db:seed --class=IndikatorSeeder
 - php artisan db:seed --class=PenilaianSeeder
+- php artisan db:seed --class=UsersTableSeeder
