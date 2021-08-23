@@ -17,25 +17,9 @@ use TCG\Voyager\Facades\Voyager;
 Route::get('/', function () {
     return view('index');
 });
-Route::get('pencarian', function () {
-    return view('pencarian');
-});
-Route::get('bansoskecamatan', function () {
-    return view('bansoskecamatan');
-});
-Route::get('bansoskelurahan', function () {
-    return view('bansoskelurahan');
-});
-Route::get('alurbansos', function () {
-    return view('alurbansos');
-});
-Route::get('alasanditolak', function () {
-    return view('alasanditolak');
-});
 
-Auth::routes();
+
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 
 });
-
