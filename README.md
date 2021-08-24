@@ -8,7 +8,7 @@ Admin Panel Menggunakan Voyager
 * Setelah download repository, segera lakukan update composer.
 `composer install`
 
-* copy+paste `.env.example` dan ubah menjadi `.env`. sesuaikan nama database, username dan password dengan storage local.
+* copy+paste `.env.example` dan ubah menjadi `.env`. sesuaikan nama database, username dan password dengan local server.
 
 * lakukan migrasi database
 `php artisan migrate`
@@ -19,8 +19,8 @@ Admin Panel Menggunakan Voyager
 * Tambahkan symlink, agar data di storage dapat di akses public.
 `php artisan storage:link`
 
-# Menggunkan Seeder 
-Tambahkan ke `.env` => FAKER_LOCALE=id_ID Pada Baris Terakhir
+# MENGGUNAKAN DATA DUMMY
+- Tambahkan ke file .env pada baris terakhir
 
 Data Kependudukan
 
@@ -38,8 +38,6 @@ Data User
 
 `php artisan db:seed --class=UsersTableSeeder`
 
-# Set Up Kondisional
+# OPSIONAL
 
-Tambahkan key aplikasi
-
-`php artisan key:generate`
+`php artisan key:generate` apabila pada saat running aplikasi diminta menambahkan key
