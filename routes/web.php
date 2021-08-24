@@ -18,8 +18,32 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/pencarian', function(){
+    return view('pencarian');
+});
+
+Route::get('/alasanditolak', function(){
+    return view('alasanditolak');
+});
+
+Route::get('/bansoskabupaten', function(){
+    return view('bansoskabupaten');
+});
+
+Route::get('/bansoskecamatan', function(){
+    return view('bansoskecamatan');
+});
+
+Route::get('/bansoskelurahan', function(){
+    return view('bansoskelurahan');
+});
+
+Route::get('/alurbansos', function(){
+    return view('alurbansos');
+});
+
+
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
-
 });

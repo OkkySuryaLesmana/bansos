@@ -305,7 +305,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height:   100vh;
+  height: 80vh;
   background: #f9f9f9;
 }
 
@@ -315,7 +315,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero h1 {
   margin: 0;
-  font-size: 28px;
+  font-size: 42px;
   font-weight: 700;
   line-height: 56px;
   color: #0f394c;
@@ -353,7 +353,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
   }
   #hero .hero-img img {
-    width: 80%;
+    width: 50%;
   }
 }
 
@@ -1491,11 +1491,4 @@ section {
     float: none;
     text-align: center;
   }
-}
-/*--------------------------------------------------------------
-# ramdan css
---------------------------------------------------------------*/
-#ramdan .hero-img img {
-  width: 80%;
-}
 }
