@@ -6,7 +6,7 @@ Laravel Versi 8.0
 Admin Panel Menggunakan Voyager
 
 * Setelah download repository, segera lakukan update composer.
-`composer update`
+`composer install`
 
 * copy+paste `.env.example` dan ubah menjadi `.env`. sesuaikan nama database, username dan password dengan storage local.
 
