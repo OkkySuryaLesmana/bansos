@@ -38,9 +38,10 @@
       <a href="/" class="logo"><img src="assets/img/pikocis.png" alt="" class="img-fluid"></a>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="/#hero"><img src="assets/img/home.png" alt="home"/></i>&nbsp;BERANDA</a></li>
-          <li><a class="nav-link scrollto" href="/#hotline"><img src="assets/img/pengaduan.png" alt="home"/></i>&nbsp;PENGADUAN</a></li>
-          <li><a href="pencarian"><img src="assets/img/search.png" alt="home" /></i>&nbsp;PENCARIAN</a></li>
+          <li><a class="nav-link scrollto active" href="/#hero">BERANDA</a></li>
+          <li><a class="nav-link scrollto" href="/#hotline">PENGADUAN</a></li>
+          <li><a href="pencarian">PENCARIAN</a></li>
+        </ul>
       </nav><!-- .navbar -->
 
     </div>
