@@ -188,7 +188,6 @@
           <a href="/">
             <img class="img-responsive" src="{{url('assets/img/logo_pikobar.png')}}"style="position: relative; display: inline-block; left: 50%; transform: translate(-50%);">
           </a>
-
         </div>
       </div>
       <div class="row align-items-center">
