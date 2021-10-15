@@ -15,9 +15,19 @@ class CreatePenduduksTable extends Migration
     {
         Schema::create('penduduks', function (Blueprint $table) {
             $table->id();
-            $table->integer('nik')->unique();
-            $table->string('nama');
-            $table->string('alamat');
+            $table->string('nik')->unique();
+            $table->string('nama_lgkp');
+            $table->integer('jenis_klmin');
+            $table->string('tmpt_lhr');
+            $table->string('tgl_lhr');
+            $table->string('no_kk');
+            $table->string('no_prop');
+            $table->string('no_kab');
+            $table->string('no_kec');
+            $table->string('no_kel');
+            $table->string('no_rw');
+            $table->string('no_rt');
+            $table->string('kepala_keluarga');
             $table->timestamps();
         });
     }
