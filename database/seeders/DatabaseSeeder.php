@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
         $faker = Faker::create('id_ID');
         Penduduk::factory(100)->create();
 
+
         $penduduk = DB::table('penduduks')->get();
 
         foreach ($penduduk as $pen) {

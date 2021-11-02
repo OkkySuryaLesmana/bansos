@@ -59,7 +59,7 @@ class PenilaianSeeder extends Seeder
 //        3
         Penilaian::create([
             'indikator_id'=>3,
-            'nama' => '>0 orang',
+            'nama' => '0 orang',
             'nilai' => 1
         ]);
         Penilaian::create([
@@ -95,7 +95,7 @@ class PenilaianSeeder extends Seeder
         ]);
         Penilaian::create([
             'indikator_id'=>4,
-            'nama' => '>1 KK',
+            'nama' => '1 KK',
             'nilai' => 4
         ]);
 //        5
