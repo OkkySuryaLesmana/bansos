@@ -221,7 +221,7 @@
         $('.btn-submit').on('click', function(){
         $('.btn-submit').attr('disabled', true);
         console.log('message success');
-        let nik = $('#nik :input').val();
+        let nik = $('#nik:input').val();
         let _token   = $('meta[name="csrf-token"]').attr('content');
         let secret_key = $('#secret_key').val();
         // console.log(secret_key);
@@ -232,17 +232,17 @@
             // url:'https://private-92f0f-alihamzah.apiary-mock.com/api/get_penduduk/' + nik,
             url: 'https://induk.ciamiskab.go.id/api/get_penduduk/' + nik,
             data: {
-                // nik:nik,
-                // _token:_token,
+                nik:nik,
+                _token:_token,
                 'secret_key' : secret_key
             },
             success: function(data) {
                 console.log(data);
-                $('#nama_lgkp :input').val(data["data"][0]["nama_lengkap"]);
-                $('#tmpt_lhr :input').val(data["data"][0]["tempat_lahir"]);
-                $('#jenis_klmin :input').val(data["data"][0]["jenis_kelamin"]);
-                $('#no_kk :input').val(data["data"][0]["no_kk"]);
-                $('#tgl_lhr :input').val(data["data"][0]["tanggal_lahir"]);
+                $('#nama_lgkp:input').val(data["data"][0]["nama_lengkap"]);
+                $('#tmpt_lhr:input').val(data["data"][0]["tempat_lahir"]);
+                $('#jenis_klmin:input').val(data["data"][0]["jenis_kelamin"]);
+                $('#no_kk:input').val(data["data"][0]["no_kk"]);
+                $('#tgl_lhr:input').val(data["data"][0]["tanggal_lahir"]);
             }
         });
         setTimeout(function(){ $('.btn-submit').removeAttr('disabled'); }, 5000);

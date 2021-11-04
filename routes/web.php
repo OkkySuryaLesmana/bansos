@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\KalkulasiController;
 use Illuminate\Support\Facades\Route;
 use TCG\Voyager\Facades\Voyager;
 
@@ -42,7 +43,10 @@ Route::get('/alurbansos', function(){
     return view('alurbansos');
 });
 
-
+Route::get('/get-kemiskinan', [KalkulasiController::class, 'get_kemiskinan']);
+Route::get('/kalkulasi-kemiskinan', [KalkulasiController::class, 'kalkulasi_kemiskinan']);
+Route::get('/calc-kemiskinan', [KalkulasiController::class, 'calc_kemiskinan']);
+Route::get('/check-nik', [KalkulasiController::class, 'check_nik']);
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
