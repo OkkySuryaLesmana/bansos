@@ -4,7 +4,7 @@
         value="{{ old($row->field, $dataTypeContent->{$row->field} ?? $options->default ?? '') }}"
         @if(isset($options->disabled)) disabled @endif >
 @section('data-kemiskinan')
-<div class="form-penilaian container-fluid">
+<div class="form-penilaian-hidden container-fluid">
         <div class="form-group">
                 <label for="kode_desa">Kode Desa</label>
                 <input type="text" class="form-control" id="kode_desa" name="kode_desa" placeholder="Kode Desa" value="{{ old('kode_desa', $dataTypeContent->kode_desa ?? '') }}">

@@ -104,12 +104,14 @@
                                             @endif
                                         </th>
                                         @endforeach
+                                        @if(Auth::user()->kode_desa != null)
                                         <th class="actions text-right dt-not-orderable">{{ __('voyager::generic.actions') }}</th>
+                                        @endif
                                     </tr>
                                 </thead>
                                 <tbody>
                                     @foreach($dataTypeContent as $data)
-                                    @if($data->author_id == Auth::user()->id || $data->kode_desa == Auth::user()->kode_desa || $data->kode_kecamatan == Auth::user()->kode_kecamatan)
+                                    <!-- @if($data->author_id == Auth::user()->id || $data->kode_desa == Auth::user()->kode_desa || $data->kode_kecamatan == Auth::user()->kode_kecamatan || Auth::user()->role->name == 'admin') -->
                                     <tr>
                                         @if($showCheckboxColumn)
                                             <td>
@@ -261,16 +263,11 @@
                                                     @include('voyager::bread.partials.actions', ['action' => $action])
                                                 @endif
                                             @endforeach
-                                            <button type="submit" class="btn btn-sm btn-success pull-right kalkulasi" data-id="{{ $data->id }}"><i class="voyager-laptop"></i> Kalkulasi</button>
-                                        </td>
-                                        @endif
-                                        @if($data->kode_desa =! Auth::user()->kode_desa && $data->kode_kecamatan == Auth::user()->kode_kecamatan)
-                                        <td class="no-sort no-click bread-actions">
-                                        <button type="submit" class="btn btn-sm btn-success pull-right kalkulasi" data-id="{{ $data->id }}"><i class="voyager-laptop"></i> Kalkulasi</button>
+                                            <!-- <button type="submit" class="btn btn-sm btn-success pull-right kalkulasi" data-id="{{ $data->id }}"><i class="voyager-laptop"></i> Kalkulasi</button> -->
                                         </td>
                                         @endif
                                     </tr>
-                                    @endif
+                                    <!-- @endif -->
                                     @endforeach
                                 </tbody>
                             </table>
@@ -405,7 +402,7 @@
             $('.selected_ids').val(ids);
         });
     </script>
-    <script>
+    <!-- <script>
         var APP_URL = {!! json_encode(url('/get-kemiskinan')) !!};
         var KAL = {!! json_encode(url('/kalkulasi-kemiskinan')) !!};
         var CALC = {!! json_encode(url('/calc-kemiskinan')) !!};
@@ -510,5 +507,5 @@
             }
         })
         })
-    </script>
+    </script> -->
 @stop

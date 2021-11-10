@@ -65,6 +65,78 @@ class KalkulasiController extends Controller
         return json_encode($nik);
     }
 
+    public function simpan_nilai(Request $request)
+    {
+        // AngkaKemiskinan::where('id', $request->id)
+        //     ->update(['total_nilai' => $request->nilai, 'status' => $request->status]);
+        $data = new AngkaKemiskinan;
+        $data->nik = $request->nik;
+        $data->nama_lengkap = $request->nama_lengkap;
+        $data->kode_desa = $request->kode_desa;
+        $data->kode_kecamatan = $request->kode_kecamatan;
+        $data->total_nilai = $request->total_nilai;
+        $data->status = $request->status;
+        $data->indikator1 = $request->indikator1;
+        $data->indikator2 = $request->indikator2;
+        $data->indikator3 = $request->indikator3;
+        $data->indikator4 = $request->indikator4;
+        $data->indikator5 = $request->indikator5;
+        $data->indikator6 = $request->indikator6;
+        $data->indikator7 = $request->indikator7;
+        $data->indikator8 = $request->indikator8;
+        $data->indikator9 = $request->indikator9;
+        $data->indikator10 = $request->indikator10;
+        $data->indikator11 = $request->indikator11;
+        $data->indikator12 = $request->indikator12;
+        $data->indikator13 = $request->indikator13;
+        $data->indikator14 = $request->indikator14;
+        $data->indikator15 = $request->indikator15;
+        $data->indikator16 = $request->indikator16;
+        $data->indikator17 = $request->indikator17;
+        $data->indikator18 = $request->indikator18;
+        $data->indikator19 = $request->indikator19;
+        $data->indikator20 = $request->indikator20;
+        $data->save();
+        return json_encode('data berhasil disimpan'); 
+    }
+
+    public function update_nilai(Request $request)
+    {
+        $data = AngkaKemiskinan::where('nik', $request->nik)->update(
+            ['total_nilai' => $request->total_nilai, 
+            'status' => $request->status,
+            'indikator1' => $request->indikator1,
+            'indikator2' => $request->indikator2,
+            'indikator3' => $request->indikator3,
+            'indikator4' => $request->indikator4,
+            'indikator5' => $request->indikator5,
+            'indikator6' => $request->indikator6,
+            'indikator7' => $request->indikator7,
+            'indikator8' => $request->indikator8,
+            'indikator9' => $request->indikator9,
+            'indikator10' => $request->indikator10,
+            'indikator11' => $request->indikator11,
+            'indikator12' => $request->indikator12,
+            'indikator13' => $request->indikator13,
+            'indikator14' => $request->indikator14,
+            'indikator15' => $request->indikator15,
+            'indikator16' => $request->indikator16,
+            'indikator17' => $request->indikator17,
+            'indikator18' => $request->indikator18,
+            'indikator19' => $request->indikator19,
+            'indikator20' => $request->indikator20,
+            ]
+        );
+        // dd($data);
+        if($data > 0){
+            return json_encode('sukses');
+        }else{
+            return json_encode('gagal');
+        }
+        // return json_encode('sukses');
+
+    }
+
     /**
      * Show the form for creating a new resource.
      *

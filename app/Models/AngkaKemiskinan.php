@@ -34,7 +34,7 @@ class AngkaKemiskinan extends Model
         if (!$this->author_id && Auth::user()) {
             $this->author_id = Auth::user()->id;
         }
-        
+
         parent::save();
     }
 
@@ -50,5 +50,12 @@ class AngkaKemiskinan extends Model
         return $query->where('status', static::STATUS_ACTIVE);
     }
 
-    
+    public static function dataKemiskinanDesa()
+    {
+        return AngkaKemiskinan::where('kode_desa', Auth::user()->kode_desa)->count();
+    }
+    public static function dataKemiskinanKecamatan()
+    {
+        return AngkaKemiskinan::where('kode_kecamatan', Auth::user()->kode_kecamatan)->count();
+    }
 }
